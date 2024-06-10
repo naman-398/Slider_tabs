@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
     <link rel="stylesheet" href="./assets/css/style.css">
+    
     <title>Swiper_tabs</title>
 </head>
 <body>
@@ -35,35 +38,152 @@
                     </svg>                    
             </span>
     </div>
+
+<!-- /* =============================== TAB BUTTON ==================================== */ -->
+
     <p class="ff-monsterrat para mt-8 mx-auto">Explore our images and videos that highlight our expertise. Our work speaks for itself.</p>
-    <div class="tabbox d-flex item-center mt-40 mx-auto imagetab" onclick="toggleTabBox(this)">
-        <span class="ff-monsterrat tabtext cursor-pointer active" data-tab="images">Images</span>
-        <span class="ff-monsterrat tabtext cursor-pointer" data-tab="videos">Video</span>
+    <div class="tabbox mx-auto mt-tabs">
+        <input type="radio" id="radio-1" name="tabs" checked />
+        <label class="tab ff-monsterrat" for="radio-1">Images</label>
+        <input type="radio" id="radio-2" name="tabs" />
+        <label class="tab ff-monsterrat" for="radio-2">Videos</label>
+        <span class="glider"></span>
     </div>
-    
-    <div id="imageContainer">
-        <!-- Image content goes here -->
-        <img src="image1.jpg" alt="Image 1">
-        <img src="image2.jpg" alt="Image 2">
-        <!-- Add more images as needed -->
+
+<!-- /* ===============================  IMAGE TAB  ==================================== */ -->
+<div class=" mt-40">
+    <div class="tab-content active " id="images">
+<div class=" slider">
+            <div class="slide">
+                <img
+                    src="./assets/images/Slider1.png" class=" img"/>
+            </div>
+            <div class="slide">
+                    <img
+                        src="./assets/images/Slider2.png" class=" img"/>
+            </div>
+            <div class="slide">
+                <img
+                    src="./assets/images/Slider3.png" class=" img"/>
+            </div>
+            <div class="slide">
+                <img
+                    src="./assets/images/Slider1.png" class=" img"/>
+            </div>
+            <div class="slide">
+                    <img
+                        src="./assets/images/Slider2.png" class=" img"/>
+            </div>
+</div>
     </div>
-    
-    <div id="videoContainer" style="display: none;">
-        <!-- Video content goes here -->
-        <video controls>
-            <source src="video1.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <video controls>
-            <source src="video2.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <!-- Add more videos as needed -->
-    </div> 
-          
+
+<!-- /* ===============================  VIDEO TAB  ==================================== */ -->
+
+    <div class="tab-content" id="videos">
+        <div class="slider2">
+            <div class="slide">
+                <img
+                    src="./assets/images/Slider1.png" class=" img"/>
+            </div>
+            <div class="slide">
+                    <img
+                        src="./assets/images/Slider2.png" class=" img"/>
+            </div>
+            <div class="slide">
+                <img
+                    src="./assets/images/Slider3.png" class=" img"/>
+            </div>
+            <div class="slide">
+                <img
+                    src="./assets/images/Slider1.png" class=" img"/>
+            </div>
+            <div class="slide">
+                    <img
+                        src="./assets/images/Slider2.png" class=" img"/>
+            </div>
+</div>
+    </div>
+</div>
+
 </div>
     </div>
     
     <script src="./assets/js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+$('.slider').slick({
+  centerMode: true,
+  centerPadding: '22%',
+  slidesToShow: 1,
+  autoplay: true,
+  infinite: true,
+  dots: true,
+  responsive: [
+    {
+      breakpoint: 1350,
+      settings: {
+        centerMode: true,
+      centerPadding: '18%',
+    }
+    },
+    {
+      breakpoint: 1200,
+      settings: {
+        centerMode: true,
+      centerPadding: '14%',
+    }
+    },
+    {
+      breakpoint: 1100,
+      settings: {
+        centerMode: true,
+      centerPadding: '10%',
+    }
+    },
+    {
+      breakpoint: 992,
+      centerMode: true,
+      centerPadding: '10%',
+    }
+  ]
+});
+$('.slider2').slick({
+  centerMode: true,
+  centerPadding: '22%',
+  slidesToShow: 1,
+  autoplay: true,
+  infinite: true,
+  dots: true,
+  responsive: [
+    {
+      breakpoint: 1350,
+      settings: {
+        centerMode: true,
+      centerPadding: '18%',
+    }
+    },
+    {
+      breakpoint: 1200,
+      settings: {
+        centerMode: true,
+      centerPadding: '14%',
+    }
+    },
+    {
+      breakpoint: 1100,
+      settings: {
+        centerMode: true,
+      centerPadding: '10%',
+    }
+    },
+    {
+      breakpoint: 992,
+      centerMode: true,
+      centerPadding: '10%',
+    }
+  ]
+});
+</script>
 </body>
 </html>

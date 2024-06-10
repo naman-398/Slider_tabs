@@ -1,26 +1,16 @@
-function toggleTabBox(tabBox) {
-    var activeTab = tabBox.querySelector('.active');
-    var tabs = tabBox.querySelectorAll('.tabtext');
 
-    // Toggle active class
-    activeTab.classList.remove('active');
-    var nextTab = activeTab.nextElementSibling || tabs[0]; 
-    nextTab.classList.add('active');
+// JavaScript for tab switching
+const tabs = document.querySelectorAll('.tab');
+const tabContents = document.querySelectorAll('.tab-content');
 
-    // Toggle content based on active tab
-    var activeTabName = nextTab.getAttribute('data-tab');
-    toggleContent(activeTabName);
-}
+tabs.forEach((tab, index) => {
+    tab.addEventListener('click', () => {
+        // Hide all tab contents
+        tabContents.forEach(content => {
+            content.classList.remove('active');
+        });
 
-function toggleContent(tabName) {
-    var imageContainer = document.getElementById('imageContainer');
-    var videoContainer = document.getElementById('videoContainer');
-
-    if (tabName === 'images') {
-        imageContainer.style.display = 'block';
-        videoContainer.style.display = 'none';
-    } else if (tabName === 'videos') {
-        imageContainer.style.display = 'none';
-        videoContainer.style.display = 'block';
-    }
-}
+        // Show the corresponding tab content
+        tabContents[index].classList.add('active');
+    });
+});
