@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Swiper_tabs</title>
+</head>
+<body>
+    <div class=" BgImg">
+<div class=" BlurBox mx-auto">
+    <div class=" d-flex item-center gap-12 justify-center ">
+        <span><svg width="53" height="7" viewBox="0 0 53 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M52.3868 3.5L49.5 6.38675L46.6132 3.5L49.5 0.613249L52.3868 3.5ZM49.5 4H0.500004V3H49.5V4Z" fill="url(#paint0_linear_56_576)"/>
+            <defs>
+            <linearGradient id="paint0_linear_56_576" x1="49.5" y1="4" x2="0.5" y2="4" gradientUnits="userSpaceOnUse">
+            <stop stop-color="white"/>
+            <stop offset="1" stop-color="white" stop-opacity="0"/>
+            </linearGradient>
+            </defs>
+            </svg>
+            </span>
+            <span class=" heading ff-amercian">
+                Discover Our Work
+            </span>
+            <span>
+                <svg width="53" height="7" viewBox="0 0 53 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.613249 3.5L3.5 6.38675L6.38675 3.5L3.5 0.613249L0.613249 3.5ZM3.5 4H52.5V3H3.5V4Z" fill="url(#paint0_linear_56_578)"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_56_578" x1="3.5" y1="4" x2="44" y2="4.5" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="white"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                    </linearGradient>
+                    </defs>
+                    </svg>                    
+            </span>
+    </div>
+    <p class="ff-monsterrat para mt-8 mx-auto">Explore our images and videos that highlight our expertise. Our work speaks for itself.</p>
+    <div class="tabbox d-flex item-center mt-40 mx-auto imagetab" onclick="toggleTabBox(this)">
+        <span class="ff-monsterrat tabtext cursor-pointer active" data-tab="images">Images</span>
+        <span class="ff-monsterrat tabtext cursor-pointer" data-tab="videos">Video</span>
+    </div>
+    
+    <div id="imageContainer">
+        <!-- Image content goes here -->
+        <img src="image1.jpg" alt="Image 1">
+        <img src="image2.jpg" alt="Image 2">
+        <!-- Add more images as needed -->
+    </div>
+    
+    <div id="videoContainer" style="display: none;">
+        <!-- Video content goes here -->
+        <video controls>
+            <source src="video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <video controls>
+            <source src="video2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <!-- Add more videos as needed -->
+    </div> 
+          
+</div>
+    </div>
+    
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>

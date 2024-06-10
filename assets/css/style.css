@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* =============================== FONT_FAMILY ==================================== */
+
+@font-face {
+  font-family: "American";
+  src: url(../FontFamily/amcap-eternal/AMCAP\ Eternal.ttf);
+}
+.ff-amercian {
+  font-family: "American";
+}
+.ff-monsterrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* =============================== COMMON CLASSES ==================================== */
+
+.d-flex {
+  display: flex;
+}
+.item-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* =============================== GAP MARGIN PADDING ==================================== */
+
+.gap-12 {
+  gap: 12px;
+}
+.mt-8 {
+  margin-top: 8px;
+}
+.mt-40 {
+  margin-top: 40px;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* =============================== BLUR BOX CONTENT ==================================== */
+
+.BgImg {
+  background-image: url(../images/bgimgs.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.BlurBox {
+  max-width: 1260px;
+  width: 100%;
+  border: 1px solid #268ba333;
+  background: #ffffff0d;
+  border-radius: 12px;
+  padding: 61px 60px;
+}
+.heading {
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 130%;
+  color: #fff;
+}
+.para {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #d9d9d9;
+  text-align: center;
+  max-width: 495px;
+}
+
+.tabbox {
+    position: relative;
+    width: max-content;
+    background: #ffffff1f;
+    border: 1px solid #ffffff1f;
+    padding: 4px;
+    justify-content: space-between;
+    max-width: 225px;
+    border-radius: 241px; 
+
+  }
+  .tabbox {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden; 
+  }
+  
+  .tabbox span {
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out; 
+    display: inline-block; 
+  }
+  
+  .tabbox span.active {
+    background-color: #ff5500;
+    color: white;
+    border-radius: 246px;
+    transform: translateX(0); 
+  }
+  
+.tabtext {
+  padding: 7px 21px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
