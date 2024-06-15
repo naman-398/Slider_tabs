@@ -163,8 +163,8 @@ input[id="radio-2"]:checked ~ .glider {
 }
 .buttonbg {
   background-color: transparent;
-  border: 1px solid #FFFFFF1F;
-  background: #FFFFFF1F;
+  border: 1px solid #ffffff1f;
+  background: #ffffff1f;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -172,10 +172,10 @@ input[id="radio-2"]:checked ~ .glider {
   cursor: pointer;
 }
 .buttonbg:hover svg {
-  fill:#FFFFFF ;
+  fill: #ffffff;
 }
-.buttonbg:hover{
-  background: #FF5500;
+.buttonbg:hover {
+  background: #ff5500;
 }
 
 /* =============================== SLIDER_IMAGE_BUTTON ==================================== */
@@ -183,7 +183,43 @@ input[id="radio-2"]:checked ~ .glider {
 .slider {
   margin: auto;
 }
+.slick-dots li.slick-active button:before {
+  background-color: #ff5500;
+  border: 1px solid transparent !important;
+  opacity: 100 !important;
+  width: 12.39px !important;
+  height: 12.39px !important;
+  margin-top: 0 !important;
+}
 
+.slick-dots li button:before {
+  opacity: 100 !important;
+  width: 10.3px !important;
+  height: 10.3px !important;
+  content: "" !important;
+  border: 1px solid #ff5500 !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center;
+  margin-top: 1px;
+}
+.slick-dots {
+  position: absolute;
+  bottom: -12px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin:  0;
+  padding: 0;
+  cursor: pointer;
+}
 .slick-slide {
   text-align: center;
 }
@@ -273,7 +309,9 @@ div:has(+ .slick-center) {
     font-size: 14px !important;
     line-height: 125%;
   }
-
+  .buttonbg {
+    display: none !important;
+  }
   .glider {
     width: 95.5px;
     bottom: 7%;
