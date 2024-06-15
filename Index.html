@@ -10,180 +10,220 @@
     <title>Swiper_tabs</title>
 </head>
 <body>
-    <div class=" BgImg">
-<div class=" BlurBox mx-auto">
-    <div class=" d-flex item-center gap-12 justify-center ">
-        <span><svg width="53" height="7" viewBox="0 0 53 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M52.3868 3.5L49.5 6.38675L46.6132 3.5L49.5 0.613249L52.3868 3.5ZM49.5 4H0.500004V3H49.5V4Z" fill="url(#paint0_linear_56_576)"/>
-            <defs>
-            <linearGradient id="paint0_linear_56_576" x1="49.5" y1="4" x2="0.5" y2="4" gradientUnits="userSpaceOnUse">
-            <stop stop-color="white"/>
-            <stop offset="1" stop-color="white" stop-opacity="0"/>
-            </linearGradient>
-            </defs>
-            </svg>
+  <div class=" BgImg">
+    <div class=" BlurBox mx-auto">
+
+        <div class=" d-flex item-center gap-12 justify-center ">
+            <span><svg width="53" height="7" viewBox="0 0 53 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M52.3868 3.5L49.5 6.38675L46.6132 3.5L49.5 0.613249L52.3868 3.5ZM49.5 4H0.500004V3H49.5V4Z"
+                        fill="url(#paint0_linear_56_576)" />
+                    <defs>
+                        <linearGradient id="paint0_linear_56_576" x1="49.5" y1="4" x2="0.5" y2="4"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white" />
+                            <stop offset="1" stop-color="white" stop-opacity="0" />
+                        </linearGradient>
+                    </defs>
+                </svg>
             </span>
-            <span class=" heading ff-amercian">
-                Discover Our Work
-            </span>
+            <h2> <span class=" heading-big ff-amercian">
+                    Discover Our Work
+                </span></h2>
             <span>
                 <svg width="53" height="7" viewBox="0 0 53 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.613249 3.5L3.5 6.38675L6.38675 3.5L3.5 0.613249L0.613249 3.5ZM3.5 4H52.5V3H3.5V4Z" fill="url(#paint0_linear_56_578)"/>
+                    <path d="M0.613249 3.5L3.5 6.38675L6.38675 3.5L3.5 0.613249L0.613249 3.5ZM3.5 4H52.5V3H3.5V4Z"
+                        fill="url(#paint0_linear_56_578)" />
                     <defs>
-                    <linearGradient id="paint0_linear_56_578" x1="3.5" y1="4" x2="44" y2="4.5" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="white"/>
-                    <stop offset="1" stop-color="white" stop-opacity="0"/>
-                    </linearGradient>
+                        <linearGradient id="paint0_linear_56_578" x1="3.5" y1="4" x2="44" y2="4.5"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white" />
+                            <stop offset="1" stop-color="white" stop-opacity="0" />
+                        </linearGradient>
                     </defs>
-                    </svg>                    
+                </svg>
             </span>
+        </div>
+
+        <!-- /* =============================== TAB BUTTON ==================================== */ -->
+
+        <p class="ff-monsterrat para mt-8 mx-auto">Explore our images and videos that highlight our expertise. Our
+            work
+            speaks for itself.</p>
+
+            <div class="tabbox mx-auto mt-tabs">
+              <input type="radio" id="radio-1" name="tabs" />
+              <label class="tab ff-monsterrat" for="radio-1">Images</label>
+              <input type="radio" id="radio-2" name="tabs" checked />
+              <label class="tab ff-monsterrat" for="radio-2">Videos</label>
+              <span class="glider"></span>
+          </div>
+
+        <!-- /* ===============================  IMAGE TAB  ==================================== */ -->
+        <div class=" mt-40">
+            <div class="tab-content " id="images">
+                <div class=" slider">
+                    <div class="slide">
+                        <img src="https://static.wixstatic.com/media/07c127_7b8d7a785f1c492c965d7f61d7d91d98~mv2.png"
+                            class=" img" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://static.wixstatic.com/media/07c127_842a4e65df144ec094e71d6ff5273a22~mv2.png"
+                            class=" img" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://static.wixstatic.com/media/07c127_a5eea5bf892f449595382ae464f57a0e~mv2.png"
+                            class=" img" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://static.wixstatic.com/media/07c127_7b8d7a785f1c492c965d7f61d7d91d98~mv2.png"
+                            class=" img" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://static.wixstatic.com/media/07c127_842a4e65df144ec094e71d6ff5273a22~mv2.png"
+                            class=" img" />
+                    </div>
+                </div>
+                <div class=" d-flex item-center justify-center gap-10">
+                  <button class="prevbutton buttonbg d-flex item-center justify-center">  
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#FF9931" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5"/>
+                    </svg>
+                   </button>
+                  <button class="nxtbutton buttonbg d-flex item-center justify-center">  
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#FF9931" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                    </svg>
+                   </button>
+                </div>
+              
+            </div>
+
+            <!-- /* ===============================  VIDEO TAB  ==================================== */ -->
+
+            <div class="tab-content active " id="videos">
+                <div class="slider2">
+                    <div class="slide">
+                        <img src="https://static.wixstatic.com/media/07c127_7b8d7a785f1c492c965d7f61d7d91d98~mv2.png"
+                            class=" img" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://static.wixstatic.com/media/07c127_842a4e65df144ec094e71d6ff5273a22~mv2.png"
+                            class=" img" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://static.wixstatic.com/media/07c127_a5eea5bf892f449595382ae464f57a0e~mv2.png"
+                            class=" img" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://static.wixstatic.com/media/07c127_7b8d7a785f1c492c965d7f61d7d91d98~mv2.png"
+                            class=" img" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://static.wixstatic.com/media/07c127_842a4e65df144ec094e71d6ff5273a22~mv2.png"
+                            class=" img" />
+                    </div>
+                </div>
+                <div class=" d-flex item-center justify-center gap-10">
+                  <button class="prevbtn buttonbg d-flex item-center justify-center">  
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#FF9931" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5"/>
+                    </svg>
+                   </button>
+                  <button class="nxtbtn buttonbg d-flex item-center justify-center">  
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#FF9931" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                    </svg>
+                   </button>
+                </div>
+            </div>
+        </div>
+
     </div>
-
-<!-- /* =============================== TAB BUTTON ==================================== */ -->
-
-    <p class="ff-monsterrat para mt-8 mx-auto">Explore our images and videos that highlight our expertise. Our work speaks for itself.</p>
-    <div class="tabbox mx-auto mt-tabs">
-        <input type="radio" id="radio-1" name="tabs" checked />
-        <label class="tab ff-monsterrat" for="radio-1">Images</label>
-        <input type="radio" id="radio-2" name="tabs" />
-        <label class="tab ff-monsterrat" for="radio-2">Videos</label>
-        <span class="glider"></span>
-    </div>
-
-<!-- /* ===============================  IMAGE TAB  ==================================== */ -->
-<div class=" mt-40">
-    <div class="tab-content active " id="images">
-<div class=" slider">
-            <div class="slide">
-                <img
-                    src="./assets/images/Slider1.png" class=" img"/>
-            </div>
-            <div class="slide">
-                    <img
-                        src="./assets/images/Slider2.png" class=" img"/>
-            </div>
-            <div class="slide">
-                <img
-                    src="./assets/images/Slider3.png" class=" img"/>
-            </div>
-            <div class="slide">
-                <img
-                    src="./assets/images/Slider1.png" class=" img"/>
-            </div>
-            <div class="slide">
-                    <img
-                        src="./assets/images/Slider2.png" class=" img"/>
-            </div>
 </div>
-    </div>
-
-<!-- /* ===============================  VIDEO TAB  ==================================== */ -->
-
-    <div class="tab-content" id="videos">
-        <div class="slider2">
-            <div class="slide">
-                <img
-                    src="./assets/images/Slider1.png" class=" img"/>
-            </div>
-            <div class="slide">
-                    <img
-                        src="./assets/images/Slider2.png" class=" img"/>
-            </div>
-            <div class="slide">
-                <img
-                    src="./assets/images/Slider3.png" class=" img"/>
-            </div>
-            <div class="slide">
-                <img
-                    src="./assets/images/Slider1.png" class=" img"/>
-            </div>
-            <div class="slide">
-                    <img
-                        src="./assets/images/Slider2.png" class=" img"/>
-            </div>
-</div>
-    </div>
-</div>
-
-</div>
-    </div>
     
-    <script src="./assets/js/app.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./assets/js/app.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <script>
-$('.slider').slick({
-  centerMode: true,
-  centerPadding: '22%',
-  slidesToShow: 1,
-  autoplay: true,
-  infinite: true,
-  dots: true,
-  responsive: [
-    {
-      breakpoint: 1350,
-      settings: {
+ $('.slider').slick({
         centerMode: true,
-      centerPadding: '18%',
-    }
-    },
-    {
-      breakpoint: 1200,
-      settings: {
+        centerPadding: '22%',
+        slidesToShow: 1,
+        autoplay: false,
+        infinite: true,
+        dots: false,
+        arrows: true, 
+        prevArrow: '.prevbutton',
+        nextArrow: '.nxtbutton',
+        responsive: [{
+                breakpoint: 1350,
+                settings: {
+                    centerMode: true,
+                    centerPadding: '18%',
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    centerMode: true,
+                    centerPadding: '14%',
+                }
+            },
+            {
+                breakpoint: 1100,
+                settings: {
+                    centerMode: true,
+                    centerPadding: '10%',
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: { // Correct settings object placement
+                    centerMode: true,
+                    centerPadding: '10%',
+                }
+            }
+        ]
+    });
+    $('.slider2').slick({
         centerMode: true,
-      centerPadding: '14%',
-    }
-    },
-    {
-      breakpoint: 1100,
-      settings: {
-        centerMode: true,
-      centerPadding: '10%',
-    }
-    },
-    {
-      breakpoint: 992,
-      centerMode: true,
-      centerPadding: '10%',
-    }
-  ]
-});
-$('.slider2').slick({
-  centerMode: true,
-  centerPadding: '22%',
-  slidesToShow: 1,
-  autoplay: true,
-  infinite: true,
-  dots: true,
-  responsive: [
-    {
-      breakpoint: 1350,
-      settings: {
-        centerMode: true,
-      centerPadding: '18%',
-    }
-    },
-    {
-      breakpoint: 1200,
-      settings: {
-        centerMode: true,
-      centerPadding: '14%',
-    }
-    },
-    {
-      breakpoint: 1100,
-      settings: {
-        centerMode: true,
-      centerPadding: '10%',
-    }
-    },
-    {
-      breakpoint: 992,
-      centerMode: true,
-      centerPadding: '10%',
-    }
-  ]
-});
+        centerPadding: '22%',
+        slidesToShow: 1,
+        autoplay: true,
+        infinite: true,
+        dots: false,
+        arrow: true,
+        prevArrow: '.prevbtn',
+        nextArrow: '.nxtbtn',
+        responsive: [{
+                breakpoint: 1350,
+                settings: {
+                    centerMode: true,
+                    centerPadding: '18%',
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    centerMode: true,
+                    centerPadding: '14%',
+                }
+            },
+            {
+                breakpoint: 1100,
+                settings: {
+                    centerMode: true,
+                    centerPadding: '10%',
+                }
+            },
+            {
+                breakpoint: 992,
+                centerMode: true,
+                centerPadding: '10%',
+            }
+        ]
+    });
 </script>
 </body>
 </html>
