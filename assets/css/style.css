@@ -259,13 +259,13 @@ input[id="radio-2"]:checked ~ .glider {
   transition: opacity 0.3s ease-in-out;
   border: 1px solid #ffffff33;
   max-width: 611px;
-  max-height: 329;
+  max-height: 329px;
 }
 .slick-slide video {
   transition: opacity 0.3s ease-in-out;
   border: 1px solid #ffffff33;
   max-width: 611px;
-  max-height: 329;
+  max-height: 329px;
   border-radius: 12px;
 }
 
