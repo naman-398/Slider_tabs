@@ -120,7 +120,9 @@
 input[type="radio"] {
   display: none;
 }
+.slide2{
 
+}
 .tab {
   display: flex;
   align-items: center;
@@ -244,10 +246,27 @@ input[id="radio-2"]:checked ~ .glider {
   box-shadow: 0px 1px 22px 0px #ffffff33;
   border: 3px solid #ffffff4d;
 }
+.slick-slide.slick-center video {
+  position: relative;
+  z-index: 1;
+  transform: scale(1.1);
+  box-shadow: 0px 1px 22px 0px #ffffff33;
+  border: 3px solid #ffffff4d;
+  border-radius: 12px;
+}
 
 .slick-slide img {
   transition: opacity 0.3s ease-in-out;
   border: 1px solid #ffffff33;
+  max-width: 611px;
+  max-height: 329;
+}
+.slick-slide video {
+  transition: opacity 0.3s ease-in-out;
+  border: 1px solid #ffffff33;
+  max-width: 611px;
+  max-height: 329;
+  border-radius: 12px;
 }
 
 .slick-track {
