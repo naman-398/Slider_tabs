@@ -252,7 +252,6 @@ input[id="radio-2"]:checked~.glider {
 .slick-slide video {
     height: auto;
     border-radius: 10px !important;
-    /* Adding rounded corners for better appearance */
 }
 
 .slick-slide.slick-center img {
@@ -297,6 +296,9 @@ div:has(+ .slick-center) {
 .slide.slick-slide {
     position: relative;
 }
+.slide2.slick-slide {
+    position: relative;
+}
 
 .slide.slick-slide::before {
     content: '';
@@ -305,6 +307,16 @@ div:has(+ .slick-center) {
     left: 0;
     width: 100%;
     height: 100%;
+    background: #00000066;
+    border-radius: 10px;
+}
+.slide2.slick-slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 2%;
+    width: 96%;
+    height: 99%;
     background: #00000066;
     border-radius: 10px;
 }
