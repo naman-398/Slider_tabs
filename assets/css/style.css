@@ -255,6 +255,7 @@ input[id="radio-2"]:checked ~ .glider {
   border: 3px solid #ffffff4d;
   border-radius: 12px;
   max-height: 331.77px !important;
+  width: 100%;
 }
 
 .slick-slide img {
@@ -269,6 +270,7 @@ input[id="radio-2"]:checked ~ .glider {
   max-width: 611px;
   max-height: 329px;
   border-radius: 12px;
+  width: 100%;
 }
 
 .slick-track {
@@ -338,7 +340,6 @@ div:has(+ .slick-center) {
     display: none !important;
   }
   .glider {
-    width: 95.5px;
     bottom: 7%;
   }
 
