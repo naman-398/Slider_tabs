@@ -1,4 +1,3 @@
-
 // JavaScript for tab switching
 const tabs = document.querySelectorAll('.tab');
 const tabContents = document.querySelectorAll('.tab-content');
