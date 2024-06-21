@@ -245,6 +245,7 @@ input[id="radio-2"]:checked ~ .glider {
   transform: scale(1.1);
   box-shadow: 0px 1px 22px 0px #ffffff33;
   border: 3px solid #ffffff4d;
+  max-height: 360px;
 }
 .slick-slide.slick-center video {
   position: relative;
@@ -253,6 +254,7 @@ input[id="radio-2"]:checked ~ .glider {
   box-shadow: 0px 1px 22px 0px #ffffff33;
   border: 3px solid #ffffff4d;
   border-radius: 12px;
+  max-height: 328px !important;
 }
 
 .slick-slide img {
